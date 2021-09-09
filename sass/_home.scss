@@ -1,0 +1,127 @@
+.wrapper {
+  .rectangle {
+    min-height: 40px;
+    max-width: 40px;
+    background: white;
+    border-radius: 5px;
+    padding: 9px;
+    text-align: center;
+  }
+
+  .top-header {
+    .progress {
+      height: 5px;
+      min-width:  100% !important;
+      margin-top: 5px;
+      .progress-bar {
+        background: $main-color5;
+      }
+    }
+  }
+}
+
+.chart-area {
+  height: 420px;
+}
+
+.chart-table {
+  font-size: 12px !important;
+
+  .ww {
+    width: 15%;
+  }
+
+  .progress {
+    height: 5px;
+  }
+
+
+}
+  .c1 {
+    background: #8675ff;
+  }
+  .c2 {
+    background: #feba69;
+  }
+  .c3 {
+    background: #ff718b;
+  }
+
+.rectangle1 {
+  bottom: 0;
+  position: absolute;
+  min-height: 40px;
+  max-width: 40px;
+  background: white;
+  border-radius: 5px;
+  padding: 9px;
+  text-align: center;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.h-97 {
+  height: 99%;
+}
+
+.maps {
+  font-size: 12px;
+  transform: rotate(270deg);
+  position: absolute;
+  padding-bottom: 100px;
+  // padding-left: 100px;
+}
+
+// footer
+
+.myBarChart1 {
+
+  .progress,.progress-bar {
+    height: 10px !important;
+  }
+}
+
+
+
+// ====================================
+// MEDIA QUERIES
+// ====================================
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .main-titles {
+    font-size: 1.8em !important;
+    line-height: 1.5em;
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .S-feature1 {
+    .feature1-right {
+      // margin-top: 20px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .main-titles {
+    font-size: 2.5em !important;
+    line-height: 1.5em;
+  }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}

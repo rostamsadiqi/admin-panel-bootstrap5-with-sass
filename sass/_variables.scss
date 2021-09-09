@@ -1,0 +1,63 @@
+
+// Colors
+$main-color: #1d293f ;
+$main-color2: #eaf9ff;
+$main-color3: #03385a;
+$main-color4: #96cdf4;
+$main-color5: #8675ff;
+$main-color6: #383874;
+$dark-gray: #4A4A4A;
+$light-gray: #9B9B9B;
+$gray1: #c5c5d4;
+
+$gray-color1: #555555;
+$gray-color2: #6A696A;
+$gray-color3: #9B9B9B;
+$gray-color4: #D8D8D8;
+$gray-color5: #EBEBEB;
+$gray-color6: #F0F4F6;
+
+$blue-color1: #447CF9;
+$blue-color2: #E1EAFF;
+$light-blue: #0EAADB;
+
+$red-color1: #F4647D;
+$red-color2: #FEE7EB;
+$dark-red: #D0011B;
+
+$orange-color1: #F5A623;
+$orange-color2: #FDEDD3;
+
+$green-color1: #6BC13E;
+$green-color2: #E3F3DA;
+
+$lily-white: #e9f7fe;
+$white-lilac: #f7f9fc;
+$white-lilac: #f7f9fc;
+
+
+@mixin box-shadow($shadow: 0px 2px 9px -2px rgba(0,0,0,0.17)){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin box-shadow2($shadow2: 0px 7px 19px -6px rgba(0,0,0,0.25)){
+    -webkit-box-shadow: $shadow2;
+    -moz-box-shadow: $shadow2;
+    box-shadow2: $shadow2;
+}
+
+@mixin dark-overlay {
+    &:after {
+        content: "";
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}

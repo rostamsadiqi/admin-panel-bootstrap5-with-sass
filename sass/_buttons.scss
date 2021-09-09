@@ -1,0 +1,45 @@
+.btn {
+  padding: 12px 40px;
+  font-size: 14px;
+  min-width: 150px;
+  height: 50px;
+
+}
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  background: $main-color;
+
+}
+
+.btn-3 {
+    color: white !important;
+}
+
+.btn-sm {
+  padding: 8px 26px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background: $main-color;
+  color: white;
+  border: 1px solid $main-color;
+
+  &:hover {
+    background-color: $main-color;
+    border: 1px solid $main-color;
+  }
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: $main-color;
+  border: 1px solid $main-color;
+
+  &:hover {
+    background-color: $main-color;
+    color: white;
+    border: 1px solid $main-color;
+  }
+}

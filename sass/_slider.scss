@@ -1,0 +1,161 @@
+
+
+/* ========== Homepage 6 ========== */
+
+.screenshot-slider-wrapper {
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.screenshots-dots {
+    .slick-dots {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0 4.5px;
+
+            button {
+                border: none;
+                list-style: none;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: $white-lilac;
+                color: transparent;
+                opacity: 0.2;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            &.slick-active {
+                background-color: $golden-yellow !important;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.screenshot-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 720px !important;
+    max-height: 720px !important;
+
+    @include brk-point(690px) {
+        width: 283px;
+        min-height: 720px !important;
+        max-height: 720px !important;
+        margin-bottom: 18.5px;
+    }
+
+    img {
+        @include brk-point(690px) {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+.phone-bg-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 11;
+    display: none;
+
+    @include brk-point(690px) {
+        display: block;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.screenshot-slider {
+    .slick-list {
+        margin: 0 -23.5px;
+    }
+
+    .slick-slide {
+        opacity: .5;
+        transition: 0.4s;
+    }
+
+    .slick-center {
+        opacity: 1;
+        border-radius: 40px;
+        max-height: 720px !important;
+        transform: scale(1.1);
+        min-height: 690px;
+
+        img {
+            border-radius: 40px;
+        }
+
+    }
+}
+
+.l6-testimonial {
+    .slick-dots {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0 4.5px;
+
+            button {
+                border: none;
+                list-style: none;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: $dark-cloud;
+                color: transparent;
+                opacity: 0.2;
+
+                @include dark-mode {
+                    background-color: $white-lilac;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            &.slick-active {
+                background-color: $purple-heart;
+
+                @include dark-mode {
+                    background-color: $purple-heart;
+                    opacity: 1;
+                }
+
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
